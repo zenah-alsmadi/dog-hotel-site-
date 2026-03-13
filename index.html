@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="hero-grid">
+    <div class="card">
+      <h1
+        data-ar="مرحباً بكم في Loving Homes Dog Hotel"
+        data-en="Welcome to Loving Homes Dog Hotel"
+        data-zh="欢迎来到 Loving Homes 狗狗酒店">
+        مرحباً بكم في Loving Homes Dog Hotel
+      </h1>
+
+      <p
+        data-ar="نقدم في هونغ كونغ رعاية يومية وإقامة مريحة وآمنة للكلاب، مع مرافق حديثة وخدمات مصممة لتلبية احتياجات الحيوانات الأليفة وأصحابها."
+        data-en="In Hong Kong, we provide safe daily care and comfortable stays for dogs, with modern facilities and services designed for pets and their owners."
+        data-zh="我们在香港为狗狗提供安全的日常照护与舒适住宿，并配备现代化设施与贴心服务。">
+        نقدم في هونغ كونغ رعاية يومية وإقامة مريحة وآمنة للكلاب، مع مرافق حديثة وخدمات مصممة لتلبية احتياجات الحيوانات الأليفة وأصحابها.
+      </p>
+
+      <div class="cta-row">
+        <button class="cta-btn" onclick="goPage('services.html')" data-ar="استكشف الخدمات" data-en="Explore Services" data-zh="查看服务">استكشف الخدمات</button>
+        <button class="cta-btn" onclick="goPage('packages.html')" data-ar="عرض الباقات" data-en="View Packages" data-zh="查看套餐">عرض الباقات</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img
+        src="../imag/hero-dog.jpg"
+        alt="Dog enjoying a premium hotel stay"
+        id="dogImage"
+        class="hero-image">
+    </div>
+  </section>
+
+  <section class="card video-card">
+    <h2
+      data-ar="تعرف على الفندق"
+      data-en="See our dog hotel"
+      data-zh="了解我们的狗狗酒店">
+      تعرف على الفندق
+    </h2>
+
+    <div class="video-box">
+      <video controls>
+        <source src="../video/dog-daycare.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span data-ar="© 2026 Loving Homes Dog Hotel" data-en="© 2026 Loving Homes Dog Hotel" data-zh="© 2026 Loving Homes 狗狗酒店">© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

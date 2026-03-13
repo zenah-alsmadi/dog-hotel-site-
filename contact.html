@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 data-ar="اتصل بنا" data-en="Contact Us" data-zh="联系我们">اتصل بنا</h1>
+    <p
+      data-ar="يمكنك التواصل معنا لطلب مزيد من المعلومات حول الباقات أو لترتيب حزمة مخصصة."
+      data-en="You can contact us for more information about our packages or to arrange a custom package."
+      data-zh="如需了解更多套餐信息或安排定制套餐，请联系我们。">
+      يمكنك التواصل معنا لطلب مزيد من المعلومات حول الباقات أو لترتيب حزمة مخصصة.
+    </p>
+  </section>
+
+  <section class="contact-grid">
+    <div class="card">
+      <form class="contact-form">
+        <label for="name" data-ar="الاسم" data-en="Name" data-zh="姓名">الاسم</label>
+        <input id="name" type="text" required>
+
+        <label for="email" data-ar="البريد الإلكتروني" data-en="Email" data-zh="电子邮箱">البريد الإلكتروني</label>
+        <input id="email" type="email" required>
+
+        <label for="subject" data-ar="نوع الطلب" data-en="Request type" data-zh="请求类型">نوع الطلب</label>
+        <select id="subject">
+          <option data-ar="استفسار عام" data-en="General enquiry" data-zh="一般咨询">استفسار عام</option>
+          <option data-ar="باقة مخصصة" data-en="Custom package" data-zh="定制套餐">باقة مخصصة</option>
+          <option data-ar="حجز أو متابعة" data-en="Booking or follow-up" data-zh="预订或跟进">حجز أو متابعة</option>
+        </select>
+
+        <label for="message" data-ar="الرسالة" data-en="Message" data-zh="留言">الرسالة</label>
+        <textarea id="message" rows="6" required></textarea>
+
+        <button class="cta-btn" type="submit" data-ar="إرسال" data-en="Send" data-zh="发送">إرسال</button>
+      </form>
+    </div>
+
+    <div class="card contact-info">
+      <p data-ar="الهاتف: +852 5550 8421" data-en="Phone: +852 5550 8421" data-zh="电话：+852 5550 8421">الهاتف: +852 5550 8421</p>
+      <p data-ar="البريد: contact@lovinghomesdoghotel.com" data-en="Email: contact@lovinghomesdoghotel.com" data-zh="邮箱：contact@lovinghomesdoghotel.com">البريد: contact@lovinghomesdoghotel.com</p>
+      <p data-ar="الموقع: هونغ كونغ" data-en="Location: Hong Kong" data-zh="地点：香港">الموقع: هونغ كونغ</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

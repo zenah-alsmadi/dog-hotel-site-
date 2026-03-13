@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 data-ar="خدماتنا" data-en="Our Services" data-zh="我们的服务">خدماتنا</h1>
+    <p
+      data-ar="نوفر مجموعة من الخدمات المصممة لراحة الكلاب وطمأنينة أصحابها، بما في ذلك التوصيل والرعاية اليومية والتحديثات المنتظمة."
+      data-en="We provide a range of services designed for dogs’ comfort and owners’ peace of mind, including transport, daily care, and regular updates."
+      data-zh="我们提供多种服务，包括接送、日常照护和定期更新，让狗狗舒适、主人安心。">
+      نوفر مجموعة من الخدمات المصممة لراحة الكلاب وطمأنينة أصحابها، بما في ذلك التوصيل والرعاية اليومية والتحديثات المنتظمة.
+    </p>
+  </section>
+
+ <div class="service-block card">
+
+<img src="../imag/dog-walk.jpg"
+class="media-img"
+alt="Dog walking in forest">
+
+<div>
+
+<h2
+data-ar="التمشية اليومية في الغابات"
+data-en="Daily forest walks"
+data-zh="每日森林散步">
+
+التمشية اليومية في الغابات
+
+</h2>
+
+<p
+data-ar="يتم اصطحاب الكلاب يومياً في جولات مشي آمنة داخل المسارات الطبيعية والغابات للحفاظ على نشاطها وصحتها."
+data-en="Dogs are taken on safe daily walks through natural forest trails to keep them active and healthy."
+data-zh="狗狗每天都会在安全的森林小径散步，以保持健康和活力。">
+
+يتم اصطحاب الكلاب يومياً في جولات مشي آمنة داخل المسارات الطبيعية والغابات للحفاظ على نشاطها وصحتها.
+
+</p>
+
+</div>
+
+</div>
+
+  <section class="service-block card">
+    <img src="../imag/vet-care.jpg" class="media-img" alt="Veterinary care available">
+    <div>
+      <h2 data-ar="رعاية بيطرية 24 ساعة" data-en="24-hour veterinary care" data-zh="24小时兽医服务">رعاية بيطرية 24 ساعة</h2>
+      <p data-ar="تتوفر خدمات بيطرية على مدار الساعة عند الحاجة." data-en="Veterinary services are available 24 hours a day when needed." data-zh="如有需要，可提供24小时兽医服务。">تتوفر خدمات بيطرية على مدار الساعة عند الحاجة.</p>
+    </div>
+  </section>
+
+  <section class="service-block card">
+    <img src="../imag/dog-grooming.jpg" class="media-img" alt="Dog grooming service">
+    <div>
+      <h2 data-ar="الحلاقة والتنظيف" data-en="Grooming and cleaning" data-zh="美容与清洁">الحلاقة والتنظيف</h2>
+      <p data-ar="تتوفر جلسات حالقة وتنظيف ضمن بعض الباقات أو حسب الطلب." data-en="Grooming and cleaning sessions are available in selected packages or on request." data-zh="部分套餐或按需求提供美容与清洁服务。">تتوفر جلسات حالقة وتنظيف ضمن بعض الباقات أو حسب الطلب.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

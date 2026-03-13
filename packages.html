@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages | Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 data-ar="الباقات المتوفرة" data-en="Available Packages" data-zh="可选套餐">الباقات المتوفرة</h1>
+    <p
+      data-ar="نوفر ثلاث باقات رئيسية، بالإضافة إلى باقات مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية."
+      data-en="We offer three main packages, in addition to custom packages for long stays or dogs with extra requirements."
+      data-zh="我们提供三种主要套餐，并可为长期住宿或特殊需求的狗狗安排定制套餐。">
+      نوفر ثلاث باقات رئيسية، بالإضافة إلى باقات مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية.
+    </p>
+  </section>
+
+  <section class="package-block card">
+    <img src="../imag/dog-walk.jpg" class="media-img" alt="Day package">
+    <div>
+      <h2 data-ar="باقة اليوم" data-en="Day Package" data-zh="日间套餐">باقة اليوم</h2>
+      <ul class="package-list">
+        <li data-ar="المشي مرتين يومياً" data-en="Two walks per day" data-zh="每天散步两次">المشي مرتين يومياً</li>
+        <li data-ar="منطقة لعب خارجية" data-en="Outdoor play area" data-zh="户外玩耍区">منطقة لعب خارجية</li>
+        <li data-ar="مسار رشاقة" data-en="Agility course" data-zh="敏捷训练区">مسار رشاقة</li>
+        <li data-ar="حفر حفرة في الرمل" data-en="Sand digging pit" data-zh="沙坑区域">حفر حفرة في الرمل</li>
+      </ul>
+      <span class="package-price" data-ar="ابتداءً من 20$" data-en="From $20" data-zh="20美元起">ابتداءً من 20$</span>
+    </div>
+  </section>
+
+  <section class="package-block card">
+    <img src="../imag/indoor-play.jpg" class="media-img" alt="Classic package">
+    <div>
+      <h2 data-ar="الباقة الكلاسيكية" data-en="Classic Package" data-zh="经典套餐">الباقة الكلاسيكية</h2>
+      <ul class="package-list">
+        <li data-ar="المشي ثلاث مرات يومياً" data-en="Three walks per day" data-zh="每天散步三次">المشي ثلاث مرات يومياً</li>
+        <li data-ar="ثلاثة أنشطة يومية" data-en="Three daily activities" data-zh="每天三项活动">ثلاثة أنشطة يومية</li>
+        <li data-ar="حظيرة لعب داخلية" data-en="Indoor play barn" data-zh="室内游乐区">حظيرة لعب داخلية</li>
+        <li data-ar="منطقة للاسترخاء" data-en="Relaxation area" data-zh="休息区">منطقة للاسترخاء</li>
+        <li data-ar="جلسة حالقة وتنظيف" data-en="Grooming and cleaning session" data-zh="美容与清洁服务">جلسة حالقة وتنظيف</li>
+      </ul>
+      <span class="package-price" data-ar="ابتداءً من 35$" data-en="From $35" data-zh="35美元起">ابتداءً من 35$</span>
+    </div>
+  </section>
+
+  <section class="package-block card">
+    <img src="../imag/grass-are.jpg" class="media-img" alt="Premium package">
+    <div>
+      <h2 data-ar="الباقة المميزة" data-en="Premium Package" data-zh="高级套餐">الباقة المميزة</h2>
+      <ul class="package-list">
+        <li data-ar="المشي أربع مرات يومياً" data-en="Four walks per day" data-zh="每天散步四次">المشي أربع مرات يومياً</li>
+        <li data-ar="أربعة أنشطة يومية" data-en="Four daily activities" data-zh="每天四项活动">أربعة أنشطة يومية</li>
+        <li data-ar="مساحة عشب خاصة" data-en="Private grass area" data-zh="私人草地区域">مساحة عشب خاصة</li>
+        <li data-ar="تحديثات وصور يومية" data-en="Daily updates and photos" data-zh="每日更新与照片">تحديثات وصور يومية</li>
+        <li data-ar="مكافآت حسب الاتفاق مع صاحب الحيوان" data-en="Treats as agreed with the owner" data-zh="根据主人的安排提供奖励">مكافآت حسب الاتفاق مع صاحب الحيوان</li>
+      </ul>
+      <span class="package-price" data-ar="ابتداءً من 50$" data-en="From $50" data-zh="50美元起">ابتداءً من 50$</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2 data-ar="الباقات المخصصة" data-en="Custom packages" data-zh="定制套餐">الباقات المخصصة</h2>
+    <p
+      data-ar="تتوفر باقات مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية. يرجى التواصل مع الشركة لترتيب هذه الباقات."
+      data-en="Custom packages are available for long stays or dogs with additional requirements. Please contact the company to arrange these packages."
+      data-zh="可为长期住宿或有额外需求的狗狗安排定制套餐，请联系酒店进行安排。">
+      تتوفر باقات مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية. يرجى التواصل مع الشركة لترتيب هذه الباقات.
+    </p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

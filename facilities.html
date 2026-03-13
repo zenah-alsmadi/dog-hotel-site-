@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facilities | Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 data-ar="مرافق الفندق" data-en="Hotel Facilities" data-zh="酒店设施">مرافق الفندق</h1>
+    <p
+      data-ar="يوفر الفندق مرافق حديثة ومريحة تشمل غرفاً مجهزة، مناطق لعب، ومناطق خارجية آمنة."
+      data-en="The hotel provides modern and comfortable facilities including equipped rooms, play areas, and secure outdoor spaces."
+      data-zh="酒店配备现代舒适的设施，包括客房、玩耍区和安全的户外空间。">
+      يوفر الفندق مرافق حديثة ومريحة تشمل غرفاً مجهزة، مناطق لعب، ومناطق خارجية آمنة.
+    </p>
+  </section>
+
+  <section class="feature-grid">
+    <div class="card">
+      <img src="../imag/indoor-play.jpg" alt="Indoor play area" class="media-img">
+      <h2 data-ar="حظيرة لعب داخلية" data-en="Indoor play barn" data-zh="室内游乐区">حظيرة لعب داخلية</h2>
+      <p data-ar="مساحة داخلية مجهزة للعب والأنشطة خلال اليوم." data-en="An equipped indoor space for play and daily activities." data-zh="配备齐全的室内活动空间。">مساحة داخلية مجهزة للعب والأنشطة خلال اليوم.</p>
+    </div>
+
+    <div class="card">
+      <img src="../imag/grass-are.jpg" alt="Private grass area" class="media-img">
+      <h2 data-ar="مساحة عشب خاصة" data-en="Private grass area" data-zh="私人草地区域">مساحة عشب خاصة</h2>
+      <p data-ar="منطقة خارجية آمنة ومناسبة للعب والاسترخاء." data-en="A secure outdoor area for play and relaxation." data-zh="安全的户外草地区域，适合玩耍和放松。">منطقة خارجية آمنة ومناسبة للعب والاسترخاء.</p>
+    </div>
+
+    <div class="card">
+      <img src="../imag/dog-hotel.jpg" alt="Heated and cooled rooms" class="media-img">
+      <h2 data-ar="غرف مزودة بتدفئة وتبريد" data-en="Heated and cooled rooms" data-zh="带地暖和空调的房间">غرف مزودة بتدفئة وتبريد</h2>
+      <p data-ar="غرف مريحة مع تدفئة/تبريد تحت الأرضية وتلفزيون." data-en="Comfortable rooms with underfloor heating/cooling and TV." data-zh="舒适房间配有地暖/制冷和电视。">غرف مريحة مع تدفئة/تبريد تحت الأرضية وتلفزيون.</p>
+    </div>
+
+    <div class="card">
+      <img src="../imag/vet-care.jpg" alt="Safe pet monitoring" class="media-img">
+      <h2 data-ar="مراقبة الحيوانات الأليفة" data-en="Pet monitoring" data-zh="宠物监控">مراقبة الحيوانات الأليفة</h2>
+      <p data-ar="إشراف ومتابعة لراحة الكلاب خلال الإقامة." data-en="Supervision and monitoring for dogs throughout their stay." data-zh="在入住期间为狗狗提供监督与照看。">إشراف ومتابعة لراحة الكلاب خلال الإقامة.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

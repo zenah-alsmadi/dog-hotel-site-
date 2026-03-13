@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Loving Homes Dog Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="site-shell">
+
+<header class="topbar">
+  <div class="topbar-inner">
+
+    <div class="brand">
+      <span
+        data-ar="🐶 Loving Homes Dog Hotel"
+        data-en="🐶 Loving Homes Dog Hotel"
+        data-zh="🐶 Loving Homes 狗狗酒店">
+        🐶 Loving Homes Dog Hotel
+      </span>
+
+      <small
+        data-ar="فندق كلاب فاخر في هونغ كونغ"
+        data-en="A premium dog hotel in Hong Kong"
+        data-zh="位于香港的高端狗狗酒店">
+        فندق كلاب فاخر في هونغ كونغ
+      </small>
+    </div>
+
+    <nav class="nav-links">
+      <button class="nav-btn" onclick="goPage('index.html')" data-ar="الرئيسية" data-en="Home" data-zh="首页">الرئيسية</button>
+      <button class="nav-btn" onclick="goPage('about.html')" data-ar="عن الشركة" data-en="About" data-zh="关于我们">عن الشركة</button>
+      <button class="nav-btn" onclick="goPage('services.html')" data-ar="الخدمات" data-en="Services" data-zh="服务">الخدمات</button>
+      <button class="nav-btn" onclick="goPage('facilities.html')" data-ar="المرافق" data-en="Facilities" data-zh="设施">المرافق</button>
+      <button class="nav-btn" onclick="goPage('packages.html')" data-ar="الباقات" data-en="Packages" data-zh="套餐">الباقات</button>
+      <button class="nav-btn" onclick="goPage('contact.html')" data-ar="اتصل بنا" data-en="Contact" data-zh="联系我们">اتصل بنا</button>
+    </nav>
+
+    <div class="controls">
+      <select class="control-btn" onchange="changeLanguage(this.value)">
+        <option value="ar">العربية</option>
+        <option value="en">English</option>
+        <option value="zh">中文</option>
+      </select>
+
+      <select class="control-btn" onchange="changeTheme(this.value)">
+        <option value="light1">Light1</option>
+        <option value="light2">Light2</option>
+        <option value="dark1">Dark1</option>
+        <option value="dark2">Dark2</option>
+      </select>
+
+      <label class="font-control">
+        <input type="range" min="10" max="27" value="16" oninput="changeFont(this.value)">
+        <span id="fontValue">16</span>
+      </label>
+
+      <button class="control-btn" onclick="readSelectedText()" data-ar="قراءة النص" data-en="Read text" data-zh="朗读文本">قراءة النص</button>
+    </div>
+
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card">
+    <h1 data-ar="من نحن" data-en="Who we are" data-zh="关于我们">من نحن</h1>
+
+    <p
+      data-ar="يقع Loving Homes Dog Hotel في هونغ كونغ، وقد تأسس لتقديم رعاية احترافية وآمنة ومريحة للكلاب في بيئة حديثة وجذابة."
+      data-en="Loving Homes Dog Hotel is located in Hong Kong and was created to provide professional, safe, and comfortable dog care in a modern and attractive environment."
+      data-zh="Loving Homes 狗狗酒店位于香港，致力于在现代舒适的环境中为狗狗提供专业、安全的照护。">
+      يقع Loving Homes Dog Hotel في هونغ كونغ، وقد تأسس لتقديم رعاية احترافية وآمنة ومريحة للكلاب في بيئة حديثة وجذابة.
+    </p>
+
+    <p
+      data-ar="يهدف الموقع الإلكتروني إلى مساعدة العملاء المحتملين على التعرف على الشركة وخدماتها ومرافقها وباقاتها، بالإضافة إلى تسهيل التواصل للحصول على مزيد من المعلومات."
+      data-en="The website helps potential customers learn about the company, its services, facilities, and packages, while making it easier to contact the business for more information."
+      data-zh="本网站帮助潜在客户了解公司的服务、设施和套餐，并方便他们联系酒店获取更多信息。">
+      يهدف الموقع الإلكتروني إلى مساعدة العملاء المحتملين على التعرف على الشركة وخدماتها ومرافقها وباقاتها، بالإضافة إلى تسهيل التواصل للحصول على مزيد من المعلومات.
+    </p>
+
+    <img src="../imag/dog-hotel.jpg" alt="Inside Loving Homes Dog Hotel" class="media-img">
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© 2026 Loving Homes Dog Hotel</span>
+    <a href="https://www.instagram.com/loving_homes_doghotel" target="_blank" rel="noopener noreferrer">📷 @loving_homes_doghotel</a>
+  </div>
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

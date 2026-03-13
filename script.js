@@ -1,5 +1,5 @@
-const clickSound = new Audio("../audio/click_sound.mp3");
-const barkSound = new Audio("../audio/dog_bark.mp3");
+const clickSound = new Audio("click_sound.mp3");
+const barkSound = new Audio("dog_bark.mp3");
 
 function playClick(){
   clickSound.currentTime = 0;
@@ -148,5 +148,6 @@ document.addEventListener("DOMContentLoaded",()=>{
   if(savedFont){
     changeFont(savedFont);
   }
+
 
 });
